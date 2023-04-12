@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,800;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alowishus Delicious</title>
+  </head>
+  <body>
+    <div class="container-fluid header-and-baner">
+      <header>
+        <nav class="navbar navbar-expand-xxl navbar-light">
+          <div class="container">
+            <a href="#" class="navbar-brend">
+              <img src="img/svg/logo.svg" alt="Alowishus Delicious" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end mr-0"
+              id="navbarContent"
+            >
+              <ul class="navbar-nav d-lg-flex text-center me-3">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Cafe Munu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Find Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Alowishus Catering</a>
+                </li>
+              </ul>
+          
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                sign in
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        SIGN IN
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3 row">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="col-sm-3 col-form-label"
+                          >Email address</label
+                        >
+                        <div class="col-sm-9">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail"
+                            placeholder="your email"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label
+                          for="inputPassword"
+                          class="col-sm-3 col-form-label"
+                          >Password</label
+                        >
+                        <div class="col-sm-9">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="inputPassword"
+                            placeholder="your password"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn">sign in</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- carousel -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="slide1_content row justify-content-center">
+              <div class="slide1_text col-sm-12 col-lg-6">
+                <h1 class="slide1_title">Alowishus Delicious Coffee</h1>
+                <p class="slide1_desc">
+                  A drink from the ‘My Alowishus’ bottled brews range OR grab
+                  one of our delicious coffee’s.
+                </p>
+                <div class="slide1_links row justify-content-around">
+                  <a href="#" class="btn col-sm-5">Download App</a>
+                  <a
+                    href="#"
+                    class="slide1_link col-sm-5 d-flex justify-content-center"
+                    >Shop Coffee</a
+                  >
+                </div>
+              </div>
+              <div class="slide1_img col-sm-12 col-lg-6">
+                <img src="img/one-glass.png" class="d-block w-100" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="slide2_content row">
+              <div class="slide2_img col-sm-12 col-lg-7">
+                <img src="img/two-glasses.png" class="d-block w-100" alt="" />
+              </div>
+              <div class="slide2_text col-sm-12 col-lg-5">
+                <h2 class="slide2_title">Order Your Favourite Coffee</h2>
+                <p class="slide1_desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <div
+                  class="slide1_links row justify-content-center justify-content-sm-start"
+                >
+                  <a href="#" class="btn col-sm-5">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="slide1_content row">
+              <div class="slide1_text col-sm-12 col-lg-6">
+                <h2 class="slide3_title">Instant Coffee At Your Home</h2>
+                <p class="slide1_desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <div
+                  class="slide1_links row justify-content-center justify-content-sm-start"
+                >
+                  <a href="#" class="btn col-sm-6">Download our app</a>
+                </div>
+              </div>
+              <div class="slide1_img col-sm-12 col-lg-6">
+                <img src="img/app.png" class="d-block w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <section class="menu">
+        <div class="container d-flex flex-column align-items-center w-100">
+          <h2 class="menu_title text-center">Explore Our Alowishus</h2>
+          <p class="menu_desc text-center col-lg-6">
+            A drink from the ‘My Alowishus’ bottled brews range OR grab one of
+            our delicious coffee’s.
+          </p>
+          <div class="menu_cards row w-100 justify-content-between">
+            <div
+              class="menu_card col-12 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <h3 class="menu_card-title">Our Catering</h3>
+              <p class="menu_card-desc text-center text-lg-start">
+                Alowishus Catering, delicious drop off Catering
+              </p>
+              <div class="menu_card-pick d-flex justify-content-center">
+                <img src="img/svg/food.svg" alt="Our Catering" />
+              </div>
+              <button class="btn">Order cathering</button>
+            </div>
+
+            <div
+              class="menu_card col-12 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <h3 class="menu_card-title">The Food</h3>
+              <p class="menu_card-desc text-center text-lg-start">
+                Our entire menu is available as dine in or takeaway.
+              </p>
+              <div class="menu_card-pick d-flex justify-content-center">
+                <img src="img/svg/fast-food.svg" alt="Our Catering" />
+              </div>
+              <button class="btn">Order cathering</button>
+            </div>
+            <div
+              class="menu_card col-12 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <h3 class="menu_card-title">The Gelato</h3>
+              <p class="menu_card-desc text-center text-lg-start">
+                Life is like GELATO, enjoy it before it melts.
+              </p>
+              <div class="menu_card-pick d-flex justify-content-center">
+                <img src="img/svg/ice-cream.svg" alt="Our Catering" />
+              </div>
+              <button class="btn">Order cathering</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bestseller -->
+      <section class="bestseller">
+        <div class="container-fluid">
+          <div class="container d-flex flex-column align-items-center">
+            <h2 class="text-center bestseller_title mt-xxl-5">
+              Best Selling Coffee
+            </h2>
+            <p class="col-lg-6 text-center bestseller_desc">
+              A drink from the ‘My Alowishus’ bottled brews range OR grab one of
+              our delicious coffee’s.
+            </p>
+
+            <div
+              class="bestseller_cards row w-100 justify-content-between d-none d-xxl-flex"
+            >
+              <div class="bestseller_card col-4">
+                <div class="bestseller_card-head d-flex">
+                  <img src="img/selling1.png" alt="Double Espresso" />
+                  <div class="bestseller_card-head-info">
+                    <span class="bestseller_card-num">#1 Selling</span>
+                    <h3 class="bestseller_card-title">Double Espresso</h3>
+                  </div>
+                </div>
+                <p class="bestseller_card-desc">
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div
+                  class="bestseller_card-price d-flex align-items-center justify-content-between"
+                >
+                  <span>$59.99</span>
+                  <button class="btn">Order now</button>
+                </div>
+              </div>
+
+              <div class="bestseller_card col-4">
+                <div class="bestseller_card-head d-flex">
+                  <img src="img/selling1.png" alt="Double Espresso" />
+                  <div class="bestseller_card-head-info">
+                    <span class="bestseller_card-num">#2 Selling</span>
+                    <h3 class="bestseller_card-title">Double Espresso</h3>
+                  </div>
+                </div>
+                <p class="bestseller_card-desc">
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div
+                  class="bestseller_card-price d-flex align-items-center justify-content-between"
+                >
+                  <span>$59.99</span>
+                  <button class="btn">Order now</button>
+                </div>
+              </div>
+
+              <div class="bestseller_card col-4">
+                <div class="bestseller_card-head d-flex">
+                  <img src="img/selling1.png" alt="Double Espresso" />
+                  <div class="bestseller_card-head-info">
+                    <span class="bestseller_card-num">#3 Selling</span>
+                    <h3 class="bestseller_card-title">Double Espresso</h3>
+                  </div>
+                </div>
+                <p class="bestseller_card-desc">
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div
+                  class="bestseller_card-price d-flex align-items-center justify-content-between"
+                >
+                  <span>$59.99</span>
+                  <button class="btn">Order now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- bestseller carousel  -->
+            <div
+              id="carouselExampleIndicators"
+              class="carousel bestseller_carousel slide container d-xxl-none"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active bestseller_carousel-item">
+                  <div class="bestseller_card bestseller_carousel-item-card">
+                    <div
+                      class="bestseller_card-head d-flex flex-column-reverse flex-sm-row"
+                    >
+                      <img src="img/selling1.png" alt="Double Espresso" />
+                      <div class="bestseller_card-head-info">
+                        <span class="bestseller_card-num">#1 Selling</span>
+                        <h3 class="bestseller_card-title">Double Espresso</h3>
+                      </div>
+                    </div>
+                    <p class="bestseller_card-desc">
+                      Amet minim mollit non deserunt dolor ullamco est sit
+                      aliqua dolor do amet sint. Velit officia consequat duis.
+                    </p>
+                    <div
+                      class="bestseller_card-price d-flex flex-column flex-sm-row align-items-center justify-content-between"
+                    >
+                      <span class="m-2">$59.99</span>
+                      <button class="btn">Order now</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="bestseller_card bestseller_carousel-item-card">
+                    <div
+                      class="bestseller_card-head d-flex flex-column-reverse flex-sm-row"
+                    >
+                      <img src="img/selling2.png" alt="Caramel Frappe" />
+                      <div class="bestseller_card-head-info">
+                        <span class="bestseller_card-num">#2 Selling</span>
+                        <h3 class="bestseller_card-title">Caramel Frappe</h3>
+                      </div>
+                    </div>
+                    <p class="bestseller_card-desc">
+                      Amet minim mollit non deserunt dolor ullamco est sit
+                      aliqua dolor do amet sint. Velit officia consequat duis.
+                    </p>
+                    <div
+                      class="bestseller_card-price d-flex flex-column flex-sm-row align-items-center justify-content-between"
+                    >
+                      <span class="m-2">$59.99</span>
+                      <button class="btn">Order now</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="bestseller_card bestseller_carousel-item-card">
+                    <div
+                      class="bestseller_card-head d-flex flex-column-reverse flex-sm-row"
+                    >
+                      <img src="img/selling3.png" alt="Iced Coffee" />
+                      <div class="bestseller_card-head-info">
+                        <span class="bestseller_card-num">#3 Selling</span>
+                        <h3 class="bestseller_card-title">Iced Coffee</h3>
+                      </div>
+                    </div>
+                    <p class="bestseller_card-desc">
+                      Amet minim mollit non deserunt dolor ullamco est sit
+                      aliqua dolor do amet sint. Velit officia consequat duis.
+                    </p>
+                    <div
+                      class="bestseller_card-price d-flex flex-column flex-sm-row align-items-center justify-content-between"
+                    >
+                      <span class="m-2">$59.99</span>
+                      <button class="btn">Order now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews -->
+      <section class="reviews">
+        <div class="container my-5">
+          <div class="row justify-content-center justify-content-lg-end">
+            <div class="reviews_text text-center  col-8 col-lg-5 text-lg-start d-flex flex-column align-items-center align-items-lg-start ">
+              <h2 class="reviews_title">What Our Customers Say</h2>
+              <div class="reviews_rating d-flex align-items-center">
+                <span class="reviews_rating-score"> 4.9 </span>
+                <div class="d-flex flex-column">
+                  <div class="reviews_rating-stars d-flex">
+                    <img src="img/svg/star.svg" alt="" />
+                    <img src="img/svg/star.svg" alt="" />
+                    <img src="img/svg/star.svg" alt="" />
+                    <img src="img/svg/star.svg" alt="" />
+                    <img src="img/svg/star.svg" alt="" />
+                  </div>
+                  <span class="based">based on 2452+ reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper reviews_swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper reviews_swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide reviews_slide">
+                <div class="reviews_card">
+                  <img src="img/reviewer-1.png" alt="" />
+                  <div class="reviews_card-text">
+                    <div class="reviews_card-reviewer d-flex align-items-center">
+                      <span class="reviews_card-reviewer-name"
+                        >Brooklyn Simmons</span
+                      >
+                      <div class="reviews_rating-stars d-flex">
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="reviews_card-desc">
+                      “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia”
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide reviews_slide">
+                <div class="reviews_card">
+                  <img src="img/reviewer-2.png" alt="" />
+                  <div class="reviews_card-text">
+                    <div class="reviews_card-reviewer d-flex align-items-center">
+                      <span class="reviews_card-reviewer-name"
+                        >Imam White</span
+                      >
+                      <div class="reviews_rating-stars d-flex">
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="reviews_card-desc">
+                      “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia”
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide reviews_slide">
+                <div class="reviews_card">
+                  <img src="img/reviewer-1.png" alt="" />
+                  <div class="reviews_card-text">
+                    <div class="reviews_card-reviewer d-flex align-items-center">
+                      <span class="reviews_card-reviewer-name"
+                        >Brooklyn Simmons</span
+                      >
+                      <div class="reviews_rating-stars d-flex">
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="reviews_card-desc">
+                      “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia”
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide reviews_slide">
+                <div class="reviews_card">
+                  <img src="img/reviewer-2.png" alt="" />
+                  <div class="reviews_card-text">
+                    <div class="reviews_card-reviewer d-flex align-items-center">
+                      <span class="reviews_card-reviewer-name"
+                        >Imam White</span
+                      >
+                      <div class="reviews_rating-stars d-flex">
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                        <img src="img/svg/star.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="reviews_card-desc">
+                      “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews_swiper-btn">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+      <div class="container">
+        <div class="row w-100 justify-content-between">
+          <div class="footer-info col-12 col-md-6 d-flex flex-column">
+            <div class="footer_brand d-flex flex-column">
+              <div class="footer_logo">
+                <img class="w-100" src="img/svg/logo-footer.svg" alt="" />
+              </div>
+              <p class="footer_desc">
+                We made it our mission to create community everyday and grow
+                meaningful, lasting relationships with our staff, our suppliers
+                and of course you, our customers.
+              </p>
+            </div>
+            <div class="location d-flex flex-column">
+              <h3 class="footer_location-title">Store Locations</h3>
+              <p class="footer_location-desc">
+                Find your nearest Alowishus store with opening hours, location
+                and contact details.
+              </p>
+              <a href="#">Find my Alowishus </a>
+            </div>
+          </div>
+
+          <!-- contacts  -->
+          <div
+            class="footer_contacts col-12 mt-md-4 col-md-5 col-xl-4 d-flex flex-column"
+          >
+            <h3 class="footer_contacts-title">Contact Alowishus!</h3>
+            <a
+              class="footer_links d-flex align-items-center"
+              href="mailto:alowishus@gmai.com"
+            >
+              <div class="footer_icons">
+                <img src="img/svg/email.svg" alt="" />
+              </div>
+              <span class="footer_contacts-link">alowishus@gmai.com</span>
+            </a>
+            <a
+              class="footer_links d-flex align-items-center"
+              href="tel:++110 214 214 2451"
+            >
+              <div class="footer_icons">
+                <img src="img/svg/phon.svg" alt="" />
+              </div>
+              <span class="footer_contacts-link">+110 214 214 2451</span>
+            </a>
+            <!-- social networks -->
+            <div
+              class="footer_links footer_social-links d-flex align-items-center"
+            >
+              <a
+                class="footer_icons"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="img/svg/fb.svg" alt="" />
+              </a>
+              <a
+                class="footer_icons"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="img/svg/inst.svg" alt="" />
+              </a>
+              <a
+                class="footer_icons"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="img/svg/twitter.svg" alt="" />
+              </a>
+              <a
+                class="footer_icons"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="img/svg/in.svg" alt="" />
+              </a>
+            </div>
+            <!-- form -->
+            <h3 class="footer_form-title">First One’s On Us!</h3>
+            <form action="" class="d-flex flex-column align-items-start w-100">
+              <input
+                type="text"
+                class="footer_input form-control"
+                placeholder="E-mail"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="swiper-init.js"></script>
+  </body>
+</html>

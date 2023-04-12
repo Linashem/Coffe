@@ -1,0 +1,396 @@
+:root {
+  --color-dark: #1b1b1d;
+  --color-grey: #64646a;
+  --color-white: white;
+  --desc-font-size: 24px;
+  --desc-line-heght: 34.68px;
+  --font-desc-sm: 18px;
+  --line-hight-desc-sm: 24px;
+}
+body {
+  font-family: "Jost", sans-serif;
+  color: var(--color-dark);
+  font-weight: 400;
+  font-size: var(--desc-font-size);
+  line-height: var(--desc-line-heght);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+a:hover,
+a:active,
+a:focus {
+  opacity: 0.7;
+}
+
+.btn {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 63px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  border: 1px solid var(--color-dark);
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+  color: var(--color-dark);
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.header-and-baner {
+  padding: 24px 0;
+  background-color: #eeeff1;
+}
+
+header {
+  padding: 0;
+  margin-bottom: 120px;
+}
+
+header .nav-link {
+  font-size: 0.938rem;
+  color: var(--color-dark);
+}
+
+.cart-pic {
+  margin-right: 20px;
+  padding: 18px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+header .navbar-nav {
+  gap: 40px;
+}
+
+.header-nav-input {
+  border-radius: 65px;
+}
+
+/* slider */
+
+.slide1_title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 6rem;
+  line-height: 140px;
+  color: var(--color-dark);
+}
+
+.slide1_desc {
+  margin-bottom: 60px;
+  color: var(--color-grey);
+}
+
+.slide1_links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.slide1_link {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(..//img/svg/prev.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(..//img/svg/next.svg);
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10%;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+/* menu  */
+.menu {
+  padding-top: 150px;
+  background: url(..//img/left-bg-glass.png) no-repeat;
+}
+
+.menu_desc {
+  margin-bottom: 100px;
+  color: var(--color-grey);
+}
+
+.menu_card {
+  padding: 40px 40px;
+}
+
+.menu_card-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0 auto 8px 0;
+}
+
+.menu_card-desc {
+  margin-bottom: 60px;
+  color: var(--color-grey);
+}
+
+.menu_card-pick {
+  margin-bottom: 60px;
+}
+
+.menu_card .btn {
+  width: 228px;
+  justify-self: center;
+  font-size: 18px;
+}
+
+/* bestseller */
+.bestseller {
+  margin-bottom: 200px;
+  padding-top: 150px;
+  background: url(..//img/right-bg-glass.png) no-repeat;
+  background-position: right top;
+}
+
+.bestseller_card {
+  padding: 20px;
+  max-width: 393px;
+}
+
+.bestseller_desc {
+  margin-bottom: 100px;
+  color: var(--color-grey);
+}
+
+.bestseller_card-head {
+  margin-bottom: 20px;
+}
+
+.bestseller_card-head img {
+  max-height: 295px;
+  max-width: 173px;
+}
+
+.bestseller_card-head-info {
+  margin-top: 120px;
+}
+
+.bestseller_card-title {
+  width: 161px;
+}
+
+.bestseller_card-num,
+.bestseller_card-desc {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-grey);
+}
+
+.bestseller_card-num {
+  margin-bottom: 8px;
+}
+
+.bestseller_card-desc {
+  margin-bottom: 40px;
+  max-width: 327px;
+}
+
+.bestseller_card-price span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.bestseller_carousel {
+  height: 650px;
+}
+
+.bestseller_carousel-item {
+  position: relative;
+}
+
+.bestseller_carousel-item-card {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators [data-bs-target] {
+  background: #1b1b1d;
+  border-bottom: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 2px;
+}
+
+.bestseller_card-head {
+  display: flex;
+  align-items: center;
+}
+
+.modal-title {
+  margin: auto auto;
+}
+
+/* footer */
+footer {
+  margin-bottom: 100px;
+  padding-top: 50px;
+  background-color: #eeeff1;
+}
+
+.footer_logo {
+  margin-bottom: 40px;
+  width: 307px;
+}
+
+.footer_brand {
+  margin-bottom: 108px;
+}
+
+.footer_desc,
+.footer_location-desc,
+.footer_contacts-link {
+  color: var(--color-grey);
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.footer_location-title,
+.footer_location-desc,
+.footer_contacts-title,
+.footer_form-title,
+.footer_links,
+.footer_input {
+  margin-bottom: 30px;
+}
+
+.footer_icons img {
+  display: block;
+}
+.footer_icons {
+  width: 60px;
+  height: 60px;
+  margin-right: 24px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 12px 30px rgba(205, 209, 214, 0.28);
+  border-radius: 75px;
+}
+
+.footer_social-links {
+  margin-bottom: 100px;
+}
+
+.footer_input {
+  height: 70px;
+  padding-left: 30px;
+  border-radius: 65px;
+}
+
+/* reviews */
+.reviews {
+  position: relative;
+  height: 1000px;
+  background: url(..//img/review-bg.png) no-repeat;
+  background-position: right bottom;
+}
+
+.reviews_title {
+  margin-bottom: 42px;
+}
+
+.reviews_rating-score {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.reviews_rating-score {
+  margin-right: 24px;
+}
+
+.reviews_rating-stars {
+  gap: 4px;
+}
+
+.based {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-grey);
+}
+
+.reviews_swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 790px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews_slide {
+  max-width: 468px;
+  margin-left: 30px;
+}
+
+.reviews_swiper-btn {
+  width: 150px;
+  position: absolute;
+  right: 410px;
+}
+
+.reviews_card {
+  border-radius: 16px;
+  background: linear-gradient(
+    142.42deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(0px 20px 60px rgba(163, 168, 179, 0.15));
+}
+
+.reviews_card img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.reviews_card-text {
+  padding: 40px;
+}
+
+.reviews_card-reviewer {
+  margin-bottom: 32px;
+  gap: 18px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.reviews_card-desc {
+  font-size: 20px;
+  line-height: 30px;
+}

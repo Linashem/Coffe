@@ -1,0 +1,219 @@
+:root {
+  --font-desc-sm: 18px;
+  --line-hight-desc-sm: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+  .bestseller_desc {
+    margin-bottom: 50px;
+  }
+  .reviews_swiper {
+    max-width: 644px;
+  }
+  .reviews_swiper-btn {
+    right: 380px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slide1_title {
+    font-size: 80px;
+    line-height: 86px;
+  }
+
+  .slide1_desc {
+    margin-bottom: 60px;
+    font-size: 24px;
+    color: var(--color-grey);
+  }
+  .bestseller_card {
+    padding: 0;
+  }
+  .reviews_swiper {
+    max-width: 500px;
+  }
+  .reviews_swiper-btn {
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .navbar-nav {
+    display: block;
+  }
+  .btn {
+    max-width: 300px;
+  }
+  .carousel-item {
+    height: 1200px;
+  }
+  .menu_card-title {
+    margin: 0 auto 8px;
+  }
+  .menu_desc {
+    margin-bottom: 30px;
+  }
+
+  .bestseller {
+    margin-bottom: 100px;
+  }
+
+  .reviews {
+    background: none;
+  }
+
+  .reviews_swiper {
+    max-width: 700px;
+  }
+
+  .reviews_title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .reviews_swiper {
+    top: 350px;
+    left: 0;
+  }
+
+  .footer_desc,
+  .footer_location-desc,
+  .footer_contacts-link {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews_swiper {
+    max-width: 500px;
+    top: 400px;
+  }
+
+  .footer_brand {
+    margin-bottom: 40px;
+  }
+  .footer-info {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu_card-desc {
+    font-size: var(--font-desc-sm);
+    line-height: var(--line-hight-desc-sm);
+  }
+
+  .menu {
+    padding-top: 10px;
+    background: none;
+  }
+  .slide1_desc,
+  .bestseller_desc {
+    line-height: var(--line-hight-desc-sm);
+    font-size: var(--font-desc-sm);
+  }
+  .bestseller_desc {
+    margin-bottom: 0;
+  }
+
+  .bestseller_card-head-info {
+    margin-top: 0px;
+  }
+
+  .bestseller_carousel {
+    height: 750px;
+  }
+
+  .bestseller_card-title {
+    text-align: center;
+  }
+  .bestseller_carousel-item {
+    height: 1000px;
+  }
+  .bestseller_card-num,
+  .bestseller_card-desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .bestseller_card-desc {
+    margin-bottom: 10px;
+  }
+  .reviews_swiper {
+    width: 400px;
+  }
+  .reviews_card {
+    max-width: 400px;
+  }
+  .reviews_card img {
+    max-width: 400px;
+  }
+  .reviews_slide {
+    margin-left: 15px;
+  }
+
+  .reviews_card-desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .menu_card-title {
+    font-size: 30px;
+  }
+
+  .slide1_title,
+  h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .btn {
+    max-width: 250px;
+  }
+  .carousel-item {
+    height: 900px;
+  }
+  .bestseller_card-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .reviews_swiper {
+    width: 300px;
+  }
+  .reviews_card {
+    max-width: 300px;
+  }
+  .reviews_card img {
+    max-width: 300px;
+  }
+  .reviews_slide {
+    margin-left: 15px;
+  }
+  .reviews_card-desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews_swiper-btn {
+    display: none;
+  }
+
+  .footer_logo {
+    width: 200px;
+  }
+
+  .footer_desc,
+  .footer_location-desc,
+  .footer_contacts-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer_icons {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    box-shadow: none;
+  }
+}
